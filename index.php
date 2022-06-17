@@ -14,7 +14,7 @@
   # echo 'Lista film' . '<br>';
   # var_dump($movies);
 
-  $movie_2 = new Movie('jujutsu kaisen 0', 'Gege Akutami');
+  $movie_2 = new Movie('Jujutsu kaisen 0', 'Gege Akutami');
   $movie_2->setGenre(['anime', 'cinema fantastico', 'azione', 'avventura']);
 
   # echo 'Film 2' . '<br>';
@@ -42,7 +42,7 @@
     <h3>Generi:</h3>
     <ul>
       <?php foreach($movie->getGenre() as $genre): ?>
-      <li><?php echo $genre ?></li>
+        <li><?php echo $genre ?></li>
       <?php endforeach; ?>
     </ul>
   <?php endforeach; ?>
